@@ -8,6 +8,7 @@ import com.danilloteles.prototico_lista.model.Usuario;
 import java.util.List;
 
 public class UsuarioViewModel extends ViewModel {
+
     private UsuarioRepository repository = new UsuarioRepository();
 
     public void adicionarUsuario(String nome) {

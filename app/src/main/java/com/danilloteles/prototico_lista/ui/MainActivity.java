@@ -15,6 +15,7 @@ import com.danilloteles.prototico_lista.databinding.ActivityMainBinding;
 import com.danilloteles.prototico_lista.model.Usuario;
 import com.danilloteles.prototico_lista.viewmodel.UsuarioViewModel;
 
+import java.util.Collections;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         binding.spinnerFiltragem.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                List<Usuario> usuarios;
+
                 switch (position) {
                     case 0:
                         binding.rvUsuarios.setVisibility(View.GONE);
@@ -59,10 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         binding.rvUsuarios.setVisibility(View.VISIBLE);
                         usuarioAdapter.setUsuarios(viewModel.getUsuariosOrdenadosZA());
                         break;
-                    default:
-                        return;
                 }
-                //usuarioAdapter.setUsuarios(usuarios);
             }
 
             @Override
