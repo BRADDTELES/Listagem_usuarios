@@ -6,7 +6,7 @@ plugins {
 
 android {
    namespace = "com.danilloteles.prototico_lista"
-   compileSdk = 34
+   compileSdk = 35
 
    defaultConfig {
       applicationId = "com.danilloteles.prototico_lista"

@@ -1,6 +1,6 @@
 package com.danilloteles.prototico_lista.di;
 
-import com.danilloteles.prototico_lista.data.UsuarioRepository;
+import com.danilloteles.prototico_lista.data.ClienteRepository;
 
 import javax.inject.Singleton;
 
@@ -15,8 +15,8 @@ public class AppModule {
 
     @Provides
     @Singleton
-    public UsuarioRepository provideUsuarioRepository() {
-        return new UsuarioRepository();
+    public ClienteRepository provideClienteRepository() {
+        return new ClienteRepository();
     }
 
 }

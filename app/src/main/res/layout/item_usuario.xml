@@ -5,24 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imgUsuario"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/usuario" />
-
     <TextView
         android:id="@+id/textViewNomeUsuario"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Usuario"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Nome do cliente"
+        android:text="Cliente"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imgUsuario"
-        app:layout_constraintStart_toEndOf="@+id/imgUsuario"
-        app:layout_constraintTop_toTopOf="@+id/imgUsuario" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEditar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnEditar"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Botão de editar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRemover"
+        app:layout_constraintEnd_toStartOf="@+id/btnRemover"
+        app:layout_constraintTop_toTopOf="@+id/btnRemover"
+        app:srcCompat="@drawable/ic_editar_24" />
+
+    <ImageButton
+        android:id="@+id/btnRemover"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Botão de remover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_remover_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
